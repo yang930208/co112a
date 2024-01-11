@@ -49,11 +49,11 @@ Or(a=in[0], b=in[1], out=a);
 ### BIT
 使用MUX(多工器)做輸出，並將輸出用D正反器取得答案
 ### Register
-使用Bit一個bit的儲存器疊加做出16bit的儲存器
+使用Bit一個bit的暫存器疊加做出16bit的暫存器
 ### RAM8
 先使用DMux8Way生成成Register要用的8個load，
 再使用Register做出需要整合的8個答案，
-最後使用Mux8Way整合上述Register做出的8個答案匯出out
+最後使用Mux8Way整合上述Register做出的8個答案輸出
 ### RAM64
 大致步驟和RAM8相似，但需要把Register改成RAM8，並加上address[0..2]
 ### RAM512
@@ -63,10 +63,10 @@ Or(a=in[0], b=in[1], out=a);
 ### RAM16K
 先使用DMux4Way生成RAM4K要用的4個load，
 再用RAM4K做出需要整合的4個答案，
-最後用Mux4Way整合上述RAM4K做出的4個答案匯出out，
+最後用Mux4Way整合上述RAM4K做出的4個答案輸出，
 address需改成[12..13]
 ### PC
-由多個多工器組合而成，else串接該if所需要的多工器
+由多個多工器組合而成，並且使用else串接該if所需要的多工器
 ## **組合語言**
 ### MULT
 先使用C語言寫出程式需要的效果再通過其他方式轉成組合語言 <br/>
@@ -76,7 +76,7 @@ address需改成[12..13]
 *測試時用CPU emulator <br/>
 ## **第5章**
 ### CPU
-
+co112a\其中作業\螢幕擷取畫面 2024-01-11 101357.png
 ### Memory
 使用多工器和記憶體連接鍵盤跟螢幕
 ### Computer
@@ -84,3 +84,4 @@ address需改成[12..13]
 ## **參考資料**
 https://people.duke.edu/~nts9/logicgates/ <br/>
 https://github.com/ccc112a/cpu2os <br/>
+https://www.nand2tetris.org/course <br/>
