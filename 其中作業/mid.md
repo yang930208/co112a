@@ -70,10 +70,10 @@ address需改成[12..13]
 ## **組合語言**
 ### MULT
 先使用C語言寫出程式需要的效果再通過其他方式轉成組合語言
-*測試時用CPU emulator
+*測試時用CPU emulator <br/>
 ### FILL
 先使用C語言寫出程式需要的效果再通過其他方式轉成組合語言
-*測試時用CPU emulator
+*測試時用CPU emulator <br/>
 ## **第5章**
 ### CPU
 
