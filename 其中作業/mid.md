@@ -76,6 +76,7 @@ address需改成[12..13]
 *測試時用CPU emulator <br/>
 ## **第5章**
 ### CPU
+CPU電路: <br/>
 ![CPU](CPU.png) <br/>
 這部分我不太清楚 <br/>
 ### Memory
