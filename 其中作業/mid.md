@@ -77,6 +77,7 @@ address需改成[12..13]
 ## **第5章**
 ### CPU
 ![CPU](CPU.png)
+這部分我不太清楚
 ### Memory
 使用多工器和記憶體連接鍵盤跟螢幕
 ### Computer
