@@ -45,3 +45,42 @@ Or(a=in[0], b=in[1], out=a);
 使用 ADD16 輸入 a[0]~a[15] 和 b[0]=ture，做15次
 ### ALU
 使用MUX(多工器)製作，用各種邏輯閘依照題目完成對應的功能
+## **正反器、暫存器、記憶體**
+### BIT
+使用MUX(多工器)做輸出，並將輸出用D正反器取得答案
+### Register
+使用Bit一個bit的儲存器疊加做出16bit的儲存器
+### RAM8
+先使用DMux8Way生成成Register要用的8個load，
+再使用Register做出需要整合的8個答案，
+最後使用Mux8Way整合上述Register做出的8個答案匯出out
+### RAM64
+大致步驟和RAM8相似，但需要把Register改成RAM8，並加上address[0..2]
+### RAM512
+大致步驟和RAM64相似，但需要把RAM8改成RAM64，並改成address[0..5]
+### RAM4K
+大致步驟和RAM512相似，但需要把RAM64改成RAM512，並加上address[0..8]
+### RAM16K
+先使用DMux4Way生成RAM4K要用的4個load，
+再用RAM4K做出需要整合的4個答案，
+最後用Mux4Way整合上述RAM4K做出的4個答案匯出out，
+address需改成[12..13]
+### PC
+由多個多工器組合而成，else串接該if所需要的多工器
+## **組合語言**
+### MULT
+先使用C語言寫出程式需要的效果再通過其他方式轉成組合語言
+*測試時用CPU emulator
+### FILL
+先使用C語言寫出程式需要的效果再通過其他方式轉成組合語言
+*測試時用CPU emulator
+## **第5章**
+### CPU
+
+### Memory
+使用多工器和記憶體連接鍵盤跟螢幕
+### Computer
+將製做好的CPU跟Memory組合起來再加上ROM
+## **參考資料**
+https://people.duke.edu/~nts9/logicgates/
+https://github.com/ccc112a/cpu2os
