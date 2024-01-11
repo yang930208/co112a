@@ -82,5 +82,5 @@ address需改成[12..13]
 ### Computer
 將製做好的CPU跟Memory組合起來再加上ROM
 ## **參考資料**
-https://people.duke.edu/~nts9/logicgates/
-https://github.com/ccc112a/cpu2os
+https://people.duke.edu/~nts9/logicgates/ <br/>
+https://github.com/ccc112a/cpu2os <br/>
