@@ -76,8 +76,8 @@ address需改成[12..13]
 *測試時用CPU emulator <br/>
 ## **第5章**
 ### CPU
-![CPU](CPU.png)
-這部分我不太清楚
+![CPU](CPU.png) <br/>
+這部分我不太清楚 <br/>
 ### Memory
 使用多工器和記憶體連接鍵盤跟螢幕
 ### Computer
